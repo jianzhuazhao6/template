@@ -1,7 +1,6 @@
 package com.zjh.template.web.controller;
 
 import com.zjh.template.web.vo.MessageVo;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

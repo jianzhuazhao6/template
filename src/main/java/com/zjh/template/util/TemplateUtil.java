@@ -36,7 +36,7 @@ public class TemplateUtil {
         configuration.setDefaultEncoding("UTF-8");
     }
 
-    public void generateFile(TemplateArgument templateArgument) throws Exception {
+    public void generateFiles(TemplateArgument templateArgument) throws Exception {
         String artifactPath = templateArgument.getArtifactId();
         String basePath = templateArgument.getBasePath();
         String groupPath = String.join(PATH_SEPARATOR, templateArgument.getGroupId().split("\\."));

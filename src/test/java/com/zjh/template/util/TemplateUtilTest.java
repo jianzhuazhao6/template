@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,7 +17,7 @@ class TemplateUtilTest {
 
     @Test
     void createJavaFile() throws Exception {
-        templateUtil.generateFile(getTemplateArgument());
+        templateUtil.generateFiles(getTemplateArgument());
     }
 
     private TemplateArgument getTemplateArgument() {
