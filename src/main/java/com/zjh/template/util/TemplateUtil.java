@@ -30,8 +30,8 @@ public class TemplateUtil {
 
     @PostConstruct
     public void init() throws IOException {
-        String templates = this.getClass().getClassLoader().getResource("templates").getPath();
-        FileTemplateLoader fileTemplateLoader = new FileTemplateLoader(new File(templates));
+        String templatesPath = this.getClass().getClassLoader().getResource("templates").getPath();
+        FileTemplateLoader fileTemplateLoader = new FileTemplateLoader(new File(templatesPath));
         configuration.setTemplateLoader(fileTemplateLoader);
         configuration.setDefaultEncoding("UTF-8");
     }
